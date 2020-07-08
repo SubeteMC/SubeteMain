@@ -1,5 +1,6 @@
 package uk.co.hubza.subetemain;
 
+
 import org.bukkit.Bukkit;
 
 import org.bukkit.ChatColor;
@@ -28,16 +29,6 @@ public final class subetemain extends JavaPlugin {
     	}
     	else if (cmd.getName().equalsIgnoreCase("subetepl")) {
     		sender.sendMessage(ChatColor.BLUE + "This server uses many plugins created by the spigot and bukkit community (see /pl) and also uses many plugins created by the Subete team. Complete credits will be available at subete.hubza.co.uk/pl but at the moment are not.");
-    		return true;
-    	}
-    	else if (cmd.getName().equalsIgnoreCase("survival")) {
-    		sender.sendMessage(ChatColor.BLUE + "Sending you to the Survival server!");
-    		Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), "server survival");
-    		return true;
-    	}
-    	else if (cmd.getName().equalsIgnoreCase("anarchy")) {
-    		sender.sendMessage(ChatColor.BLUE + "Sending you to the Anarchy server!");
-    		Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), "server anarchy");
     		return true;
     	}
             // If this hasn't happened the value of false will be returned.
