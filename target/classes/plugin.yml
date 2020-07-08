@@ -1,0 +1,41 @@
+name: SubeteLobby
+main: uk.co.hubza.subetelobby.subetelobby
+version: 1.0
+
+commands:
+   test:
+      description: This is a demo command.
+      usage: /<command> [player]
+      permission: SubeteLobby.test
+      permission-message: You don't have <permission>
+   subete:
+      description: About Subete
+      usage: /subete
+      permission: SubeteLobby.subete
+      permission-message: You don't have <permission>
+   subetepl:
+      description: Plugins and stuff
+      usage: /subetepl
+      permission: SubeteLobby.subete
+      permission-message: You don't have <permission>
+   survival:
+      description: Go to the survival world!
+      usage: /lobby
+      permission: SubeteLobby.worlds
+      permission-message: You don't have <permission>
+   anarchy:
+      description: Go to the anarchy server!
+      usage: /lobby
+      permission: SubeteLobby.worlds
+      permission-message: You don't have <permission>
+
+permissions:
+    SubeteLobby.test:
+        description: super secret test plugin
+        default: op
+    SubeteLobby.subete:
+        description: Subete Lobby message
+        default: op
+    SubeteLobby.worlds:
+        description: Go to the survival world!
+        default: op

@@ -1,0 +1,33 @@
+name: Subete
+main: uk.co.hubza.subetemain.subetemain
+version: 1.0
+
+commands:
+   subete:
+      description: About Subete
+      usage: /subete
+      permission: SubeteMain.subete
+      permission-message: You don't have <permission>
+   subetepl:
+      description: Plugins and stuff
+      usage: /subetepl
+      permission: SubeteMain.subete
+      permission-message: You don't have <permission>
+   survival:
+      description: Go to the survival world!
+      usage: /Main
+      permission: SubeteMain.worlds
+      permission-message: You don't have <permission>
+   anarchy:
+      description: Go to the anarchy server!
+      usage: /Main
+      permission: SubeteMain.worlds
+      permission-message: You don't have <permission>
+
+permissions:
+    SubeteMain.subete:
+        description: Subete Main message
+        default: any
+    SubeteMain.worlds:
+        description: Go to the survival world!
+        default: any
